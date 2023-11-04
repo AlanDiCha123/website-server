@@ -42,6 +42,15 @@ nav img:hover{
 body {
     background-image: url('https://wallpapercg.com/download/god-of-war-ragnar%C3%B6k-3840x2160-10963.jpg');
     background-size: cover;
+    opacity: 0;
+    animation: fadeIn 3s 1s forwards;
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 body::before {
     content: "";
@@ -52,7 +61,10 @@ body::before {
     height: 100%;
     background-color: rgba(74, 74, 74, 0.456);
     z-index: -1;
+    
 }
+
+
 
 *{
     margin: 0;
@@ -65,7 +77,7 @@ body::before {
 
 .contenedor {
     max-width: 800px;
-    margin: 80px auto;
+    margin: 50px auto;
     text-align: center;
     padding: 20px;
 }
